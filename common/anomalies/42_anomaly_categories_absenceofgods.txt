@@ -1,0 +1,27 @@
+#############################################
+###  ANOMALY CATEGORIES - ABSENCE OF GODS ###
+#############################################
+
+TEST_CATEGORY = {
+      key = test_category
+      desc = "TEST_CATEGORY_DESC"
+      picture = "GFX_evt_ship_in_orbit"
+      level = 1
+
+      spawn_chance = {
+          modifier = {
+              add = 3 # spawnChance
+              is_asteroid = yes
+          }
+      }
+
+      on_success = {
+          anomaly.10000
+      }
+
+      # on_fail = {
+      #   ship_event = {
+      #       id = dev_diary_fail.1 Failure event
+      #   }
+      # }
+}
